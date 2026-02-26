@@ -4,9 +4,9 @@ metadata:
   name: nks-ctx
 spec:
   version: v0.1.0
-  shortDescription: Manage NKS (Naver Kubernetes Service) cluster contexts
+  shortDescription: Manage NKS (Ncloud Kubernetes Service) cluster contexts
   description: |
-    kubectl plugin for managing NKS (Naver Kubernetes Service) cluster contexts
+    kubectl plugin for managing NKS (Ncloud Kubernetes Service) cluster contexts
     using NCP IAM authentication.
     
     Features:
