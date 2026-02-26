@@ -121,15 +121,6 @@ make test-linux         # Run tests in a Linux container (podman/docker)
 
 See [TESTING.md](TESTING.md) for details.
 
-### Release assets
-
-```bash
-git tag -a v0.1.0 -m "Release v0.1.0"
-make release-assets
-```
-
-Produces in `dist/`: source zip and tar.gz, binary zips per platform, and `checksums.txt`. Upload these to your release page.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE). Dependencies use Apache-2.0 or compatible licenses.
