@@ -1,0 +1,54 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: nks-ctx
+spec:
+  version: v0.1.0
+  shortDescription: Manage NKS (Naver Kubernetes Service) cluster contexts
+  description: |
+    kubectl plugin for managing NKS (Naver Kubernetes Service) cluster contexts
+    using NCP IAM authentication.
+    
+    Features:
+    - List all NKS clusters in your NCP account
+    - Automatically configure kubeconfig for all clusters
+    - Switch between cluster contexts (similar to kubectl ctx)
+  homepage: https://github.com/consol-lee/nks-ctx
+  license: MIT
+  platforms:
+    - selector:
+        matchLabels:
+          os: darwin
+          arch: amd64
+      uri: https://github.com/consol-lee/nks-ctx/releases/download/v0.1.0/kubectl-nks_ctx-darwin-amd64.tar.gz
+      sha256: PLACEHOLDER_SHA256_DARWIN_AMD64
+      bin: kubectl-nks_ctx
+      files:
+        - from: kubectl-nks_ctx
+          to: .
+        - from: LICENSE
+          to: .
+    - selector:
+        matchLabels:
+          os: darwin
+          arch: arm64
+      uri: https://github.com/consol-lee/nks-ctx/releases/download/v0.1.0/kubectl-nks_ctx-darwin-arm64.tar.gz
+      sha256: PLACEHOLDER_SHA256_DARWIN_ARM64
+      bin: kubectl-nks_ctx
+      files:
+        - from: kubectl-nks_ctx
+          to: .
+        - from: LICENSE
+          to: .
+    - selector:
+        matchLabels:
+          os: linux
+          arch: amd64
+      uri: https://github.com/consol-lee/nks-ctx/releases/download/v0.1.0/kubectl-nks_ctx-linux-amd64.tar.gz
+      sha256: PLACEHOLDER_SHA256_LINUX_AMD64
+      bin: kubectl-nks_ctx
+      files:
+        - from: kubectl-nks_ctx
+          to: .
+        - from: LICENSE
+          to: .
